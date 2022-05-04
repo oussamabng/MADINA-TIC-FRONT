@@ -1,0 +1,242 @@
+.card-citoyen {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 0px !important;
+  min-height: 750px;
+}
+
+.card-citoyen.rtl span {
+  direction: rtl;
+}
+
+.card-citoyen.rtl .col_mobile input {
+  text-align: right;
+}
+
+.card-citoyen.rtl span,
+.card-citoyen.rtl .divider,
+.card-citoyen.rtl #language {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+.card-citoyen.rtl span .icon {
+  margin-left: 10px;
+}
+
+.card-citoyen.dark {
+  background-color: var(--second_dark);
+}
+
+.card-citoyen.dark .divider,
+.card-citoyen.dark p {
+  color: var(--primary_text_dark);
+}
+
+._language_field_mobile {
+  width: 100%;
+}
+
+
+.card-citoyen.dark ._language_field_mobile .menu {
+  background-color: var(--background_dark);
+  border: 1px solid var(--secondary_text_dark);
+}
+
+.card-citoyen.dark .row .col span,
+.card-citoyen.dark .row .col .icon {
+  color: var(--secondary_text_dark) !important;
+}
+
+.card-citoyen.dark input,
+.card-citoyen.dark input:focus,
+.card-citoyen.dark .mobile-input input,
+.card-citoyen.dark .mobile-input input:focus {
+  background: var(--background_dark);
+  color: var(--primary_text_dark);
+}
+
+.card-citoyen.dark .primary {
+  color: var(--primary_text_dark) !important;
+  background: var(--primary_dark);
+}
+
+.card-citoyen.dark .button.secondary {
+  color: var(--primary_text_dark) !important;
+  background: var(--secondary_dark);
+}
+
+.card-citoyen.dark .ui.secondary.pointing.menu a.active.item {
+  color: var(--primary_dark) !important;
+  border-color: var(--primary_dark) !important;
+}
+
+.card-citoyen.dark .edit-profile-pic .icon {
+  color: var(--secondary_text_dark);
+}
+.card-citoyen > .citoyen-profile-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.card-citoyen {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.divider {
+  padding-top: 20px;
+  width: 80%;
+}
+.card-citoyen > .row > .col.reverse {
+  flex-direction: row-reverse;
+}
+.card-citoyen > .citoyen-profile-pic > .profile > .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.card-citoyen > .citoyen-profile-pic > .profile > .edit-profile-pic {
+  width: 35px;
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  right: -5%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.edit-profile-pic > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myInput {
+  position: absolute;
+  top: 60%;
+  right: -5%;
+}
+
+.profile {
+  position: relative;
+}
+
+.card-citoyen > .citoyen-profile-pic > .profile > .edit-profile-pic svg {
+  height: 20px;
+  width: 20px;
+}
+
+.card-citoyen > .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+
+.card-citoyen > .row > .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+.card-citoyen > .row > .col span {
+  color: #576271;
+}
+
+.icon_card {
+  color: #576271;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  padding: 2rem;
+}
+
+.edit-profile-pict.hide {
+  display: none !important;
+}
+
+.edit-profile-pic.mobile,
+._buttons_mobile {
+  min-height: 66px !important;
+}
+
+._buttons_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+._buttons_mobile.hide {
+  display: none !important;
+}
+
+._buttons_mobile .secondary {
+  background-color: var(--secondary) !important;
+  color: white !important;
+  font-size: 14px !important;
+}
+
+._buttons_mobile .primary {
+  background-color: var(--primary) !important;
+  color: white !important;
+  font-size: 14px !important;
+  border-radius: 5px;
+}
+
+.card-citoyen > .save_img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  visibility: hidden !important;
+}
+
+.card-citoyen > .save_img.hide {
+  visibility: visible !important;
+}
+
+.card-citoyen > .save_img .button {
+  min-width: 80px !important;
+  padding: 0.7rem 1rem !important;
+}
+
+.row.mobile_menu {
+  padding-top: 1rem !important;
+}
+@media (max-width: 999px) {
+  .card-citoyen > .row {
+    padding: 0 !important;
+  }
+  .card-citoyen > .row .small {
+    font-size: 12px !important;
+  }
+  .row.mobile_menu > .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-citoyen.rtl .input_p i {
+    left: 10% !important;
+  }
+}

@@ -1,0 +1,224 @@
+._container_declaration {
+  height: 100% !important;
+  min-height: 200px !important;
+  margin-left: 16rem !important;
+  margin-right: 28rem !important;
+  margin-top: 1rem !important;
+  padding: 20px !important;
+  border-radius: 4px !important;
+  box-shadow: black;
+}
+.gis.rtl {
+  direction: rtl;
+}
+
+.ui.image.infos_screen,
+.image_dcr {
+  height: 140px !important;
+  width: 140px !important;
+}
+
+._container_declaration.screen {
+  margin-top: 0 !important;
+  margin-left: 18rem !important;
+  margin-right: 3rem !important;
+  top: 5rem;
+  min-height: 500px !important;
+}
+
+._container_declaration.screen.admin {
+  top: 10rem;
+  margin-left: 19rem !important;
+}
+
+._container_declaration.screen.rtl {
+  margin-left: 3rem !important;
+  margin-right: 18rem !important;
+}
+
+._container_declaration.rtl {
+  direction: rtl;
+}
+
+.gis.rtl,
+.gis.rtl p {
+  font-family: "Cairo", sans-serif;
+}
+
+.gis.rtl ._container_declaration {
+  margin-right: 16rem !important;
+  margin-left: 28rem !important;
+}
+
+main.dark ._container_declaration {
+  background-color: var(--second_dark) !important;
+}
+
+main.dark ._container_declaration p {
+  color: var(--primary_text_dark);
+}
+
+main.dark ._container_declaration.segment.loading::before {
+  background: transparent !important;
+}
+
+._row_mobile {
+  display: none;
+}
+
+.gis.rtl ._row {
+  padding-left: 0 !important;
+  padding-right: 1rem;
+}
+
+.gis.segment {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+._contentt {
+  padding-left: 5px;
+  font-size: medium;
+  display: flex;
+}
+
+.gis.rtl ._contentt {
+  padding-right: 5px;
+  padding-left: 0;
+}
+
+._contenttt {
+  padding-top: 12px;
+}
+._container_declaration.x {
+  padding: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+._row {
+  width: 100%;
+}
+
+.roww {
+  margin: 20px 10px 0 0;
+}
+
+.gis.rtl .roww {
+  margin: 20px 0 0 10px;
+}
+
+.titre {
+  width: 20%;
+  padding-top: 9px;
+}
+
+.status_label {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px !important;
+  text-align: center;
+  margin-left: 30px !important;
+}
+
+@media (max-width: 1100px) {
+  ._container_declaration {
+    margin-right: 5rem !important;
+  }
+  .gis.rtl ._container_declaration {
+    margin-left: 5rem !important;
+  }
+}
+
+@media (max-width: 929px) {
+  ._container_declaration,
+  .gis.rtl ._container_declaration {
+    margin-right: 5rem !important;
+    margin-left: 5rem !important;
+  }
+
+  ._container_declaration.screen.rtl {
+    margin-right: 3rem !important;
+  }
+}
+
+@media (max-width: 899px) {
+  ._container_declaration.screen {
+    margin-left: 3rem !important;
+  }
+}
+
+@media (max-width: 766px) {
+  ._container_declaration {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  ._container_declaration.screen {
+    flex-direction: column !important;
+  }
+
+  .gis.rtl ._container_declaration {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  ._contentt {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .roww {
+    display: none !important;
+  }
+
+  ._row_mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  ._pic {
+    width: 100px;
+    height: 100px;
+    margin-right: 2.5px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 500px) {
+  ._container_declaration,
+  ._container_declaration.screen,
+  ._container_declaration.screen.rtl,
+  ._container_declaration.rtl {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .titre {
+    width: 100%;
+    padding-top: 9px;
+  }
+  .status_label {
+    width: 150px;
+    height: 30px;
+    margin-top: 1px !important;
+    text-align: center;
+    margin-left: 10px !important;
+  }
+  ._pic {
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  ._container_declaration.screen.admin {
+    top: 8rem;
+  }
+}

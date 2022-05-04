@@ -1,0 +1,108 @@
+._login_citoyen_section {
+  padding: 2rem 4rem;
+  padding-bottom: 1rem !important;
+}
+
+._citoyen_login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0 !important;
+  width: 350px !important;
+}
+
+._citoyen_login_form.rtl input {
+  text-align: right;
+}
+
+._citoyen_login_form .field .input input {
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 40px;
+  padding: 7px 11px;
+  margin: 1px 1px 0 1px;
+  font-weight: 400;
+  background-color: transparent;
+}
+._citoyen_login_form .field.input_err .input input {
+  border: 2px solid var(--red) !important;
+}
+
+._citoyen_login_form .field .input input:active,
+._citoyen_login_form .field .input input:focus {
+  border: 2px solid var(--primary);
+}
+._citoyen_login_form .field .input input:focus::placeholder {
+  color: transparent !important;
+}
+._citoyen_login_form .field {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+._citoyen_login_form .input input::placeholder {
+  color: #c2c2c2 !important;
+}
+._citoyen_login_form .error_inputs_msg {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  bottom: -6px;
+  left: 10px;
+  white-space: nowrap;
+  color: var(--red);
+}
+._citoyen_login_form.rtl .error_inputs_msg {
+  font-family: "Cairo", sans-serif;
+  text-align: right;
+  right: 0;
+}
+
+._citoyen_login_form.rtl .error_inputs_msg i{
+  margin-left: .25rem;
+  margin-right: 0;
+}
+
+._logo {
+  width: 94px;
+  height: 90px;
+  padding-bottom: 4px;
+}
+.special_email > .field {
+  padding: 0 !important;
+}
+._citoyen_login_form .fields {
+  margin: 0 !important;
+}
+
+@media (max-width: 1199px) {
+  ._citoyen_login_form {
+    width: 250px !important;
+  }
+}
+@media (max-width: 999px) {
+  ._citoyen_login {
+    display: none !important;
+  }
+  ._citoyen_login.mobile {
+    display: flex !important;
+    justify-content: center;
+    height: 1000px !important;
+  }
+  .citoyen_mobile_container > .row {
+    width: 340px !important;
+  }
+  ._citoyen_login_form {
+    width: 260px !important;
+  }
+  ._citoyen_login_form {
+    margin: 0rem 0 !important;
+  }
+  ._login_citoyen_section {
+    padding: 2rem 0 !important;
+  }
+  ._form_login > ._login_citoyen_section > .d-flex {
+    min-height: 800px !important;
+  }
+}

@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
+
+@font-face {
+  font-family: "Segoe_UI";
+  src: url("./assets/fonts/Segoe\ UI.woff");
+}
+
+@font-face {
+  font-family: "Segoe_UI_bold";
+  src: url("./assets/fonts//Segoe\ UI\ Bold.woff");
+}
+:root {
+  --primary: #29b5f6;
+  --primary_darker: #0085c3;
+  --blue_darker: #576271;
+  --red: #ff0000;
+  --secondary: #f66a29;
+  --secondary_darker: #f15c17;
+  --gray: #707070;
+  --gray_light: #acacac;
+  --dark-gray: #595959;
+  --yellow: #ffcc00;
+  --green: #1eb85c;
+  --main_dark: #18191a;
+  --second_dark: #242526;
+  --primary_text_dark: #e4e6eb;
+  --secondary_text_dark: #b0b3b8;
+  --hover_dark: rgba(176, 179, 184, 0.1);
+  --background_dark: #3a3b3c;
+  --primary_dark: #4ba3c7;
+  --secondary_dark: #c58267;
+  --loading_dark: rgba(150, 150, 150, 0.5);
+}
+body {
+  background-color: #f7f9fb;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p,
+h1,
+h2,
+h3,
+span,
+input,
+label,
+button {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+._sidebar_maire > .row > .menu > .d-flex {
+  width: auto !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+.bg-default {
+  background: #f7f9fb !important;
+}
+.h-full {
+  height: 100%;
+}
+.text-white {
+  color: white !important;
+}
+.text-black {
+  color: #636363 !important;
+}
+.text-gray-dark {
+  color: var(--dark-gray) !important;
+}
+.text-gray-light {
+  color: var(--gray_light) !important;
+}
+.text-default {
+  color: var(--blue_darker) !important;
+}
+.header {
+  font-size: 40px !important;
+}
+.extra-text {
+  font-size: 26px !important;
+}
+.large-title {
+  font-size: 24px !important;
+}
+.title {
+  font-size: 20px !important;
+}
+.medium-text {
+  font-size: 16px !important;
+}
+.small {
+  font-size: 14px !important;
+}
+.extra-small {
+  font-size: 12px !important;
+}
+.underline {
+  text-decoration: underline;
+}
+.d-none {
+  display: none !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.border-radius {
+  border-radius: 5px !important;
+}
+.button_primary {
+  background-color: var(--primary) !important;
+  color: white !important;
+  position: relative !important;
+  min-width: 180px !important;
+  height: none !important;
+  padding: 1rem 4rem !important;
+  font-size: 16px !important;
+}
+.button_primary:hover {
+  background-color: var(--primary_darker) !important;
+}
+.button_secondary {
+  background-color: var(--secondary) !important;
+  color: white !important;
+  position: relative !important;
+  min-width: 180px !important;
+  height: none !important;
+  padding: 1rem 4rem !important;
+  font-size: 16px !important;
+}
+.shadow {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+}
+.button_secondary:hover {
+  background-color: var(--secondary_darker) !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.field.error input {
+  background: white !important;
+  border-color: var(--red) !important;
+}
+.ui.form .field .prompt.label {
+  background: #434343 !important;
+  border-color: #434343 !important;
+  color: white !important;
+}
+.ui.error.form .ui.error.message {
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+.semi-bold {
+  font-weight: 500 !important;
+}
+.text-active {
+  color: #29b5f6 !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+._margin_horizontal_lg {
+  margin: auto 3rem !important;
+}
+._margin_horizontal_md {
+  margin: auto 2rem !important;
+}
+._margin_horizontal_sm {
+  margin: auto 1rem !important;
+}
+._margin_horizontal_xs {
+  margin: auto 0.5rem !important;
+}
+._margin_vertical_lg {
+  margin: 3rem auto !important;
+}
+._margin_vertical_md {
+  margin: 2rem auto !important;
+}
+._margin_vertical_sm {
+  margin: 1rem auto !important;
+}
+._margin_vertical_xs {
+  margin: 0.05rem auto !important;
+}
+._padding_horizontal_lg {
+  padding: auto 3rem !important;
+}
+._padding_horizontal_md {
+  padding: auto 2rem !important;
+}
+._padding_horizontal_sm {
+  padding: auto 1rem !important;
+}
+._padding_horizontal_xs {
+  padding: auto 0.5rem !important;
+}
+._padding_vertical_lg {
+  padding: 3rem auto !important;
+}
+._padding_vertical_md {
+  padding: 2rem auto !important;
+}
+._padding_vertical_sm {
+  padding: 1rem auto !important;
+}
+._padding_vertical_xs {
+  padding: 0.05rem auto !important;
+}
+._logo {
+  width: 160px;
+}
+._logo.mobile {
+  width: 70px !important;
+  height: 90px;
+}
+._admin_main {
+  padding-left: 230px;
+  padding-top: 70px;
+}
+@media (max-width: 899px) {
+  ._admin_main {
+    padding-left: 0;
+    padding-top: 85px;
+  }
+}
+._ltr {
+  direction: ltr;
+  text-align: left;
+}
+._rtl {
+  direction: rtl;
+  text-align: right;
+}
+.rtl,
+.rtl .button,
+.rtl input,
+.rtl input::placeholder {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+._citoyen_header_logo .ui-alerts.container_toastr.top-right {
+  position: absolute !important;
+  right: 1% !important;
+  top: 60% !important;
+  padding: 2rem 0 !important;
+  max-width: 400px !important;
+  z-index: 60 !important;
+}
+
+._citoyen_header_logo .ui-alerts.container_toastr.top-right .content .header {
+  font-size: 18px !important;
+}
+._citoyen_header_logo .ui-alerts.container_toastr.top-right .content p {
+  font-size: 14px !important;
+  max-width: 340px !important;
+  white-space: break-spaces !important;
+}
+._citoyen_header_logo
+  .ui-alerts.container_toastr.top-right
+  .ui.icon.message
+  > .icon:not(.close) {
+  font-size: 2rem !important;
+}
+.ui.loading.segment.dark {
+  background: black;
+  opacity: 0.2;
+}
+._annonce_tab.ui.segment {
+  overflow-y: scroll !important;
+  -ms-overflow-style: none !important;
+}
+._annonce_tab.ui.segment::-webkit-scrollbar {
+  display: none !important;
+}
+._citoyen_header .gis.ui.segment {
+  padding: 1em 0 !important;
+}
