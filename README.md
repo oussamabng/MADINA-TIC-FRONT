@@ -1,6 +1,5 @@
 # Madina-tic-frontend
-a react based frontend for madina-tic 1cs esi project
-
+a react based frontend for madina-tic 1cs esi project forked from <a href="https://github.com/th3happybit/MADINA-TIC-FRONT">here<a/>
 ## Deployment:
 
 ### Manual deployment
